@@ -19,13 +19,12 @@ const AccordionFunc = ()=>{
                     {index === activeIndex && (
                         <div>
                         <p className="button"> Capital is: {country.capital}</p>
-                       
                         </div>
                     )}
                 </div>
             ))}
             <div>
-            <button onClick={() => setShowMore(!showMore)}>{showMore ? "Show Less" : "Show More"}</button>
+            <button className="button" onClick={() => setShowMore(!showMore)}>{showMore ? "Show Less" : "Show More"}</button>
             </div>
         </div>
     ) 
